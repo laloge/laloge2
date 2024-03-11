@@ -1,0 +1,135 @@
+body {
+    overflow: auto;
+}
+
+/*GRILLE*/
+ul {
+    padding: 0px;
+}
+
+li {
+  text-align: right;
+  margin-left: auto; /* Applique une marge automatique à gauche */
+  margin-right: 0; 
+  margin-top: 20px;
+}
+
+.infos {
+  list-style-type: none;
+  padding: 0px;
+  }
+
+.grilleInfos {
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr ;
+  grid-template-rows: auto ;
+  grid-gap: 50px;
+  z-index: 2;
+  }
+
+.intro {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-top: 40px;
+  margin-bottom: -30px;
+}
+.une {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.deux {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.trois {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+  /*TYPOTHEQUE*/
+
+.titre {
+  margin: 0;
+}
+
+.texte-vertical {
+  padding: 0;
+  margin-top: 50px;
+  }
+
+.infos p {
+  padding: 0;
+  margin: 0;
+  }
+  
+.infos .titre {
+  margin: 0;
+  margin-top: 1em;
+  }
+
+.infos .sous-titre {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5em;
+  }
+    
+/*BOUTON*/
+.bouton2-portfolio {
+  display: inline;
+}
+.bouton2 a {
+  margin-right: 100px;
+}
+
+.bouton2 :last-child {
+    margin-right: 0px;
+}
+
+.bouton2 {
+  margin-top: -120px;
+}
+
+@media screen and (max-width: 996px) {
+
+  .grilleInfos{
+    grid-template-columns: 1fr;
+  }
+
+  .titre{
+    text-align: right;
+  }
+
+  .une {
+    display: none;
+  }
+
+  .deux {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: -60px;
+  }
+
+  .trois {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .bouton2 a {
+    margin-right: 20px;
+}
+.bouton2 :last-child {
+  margin-right: 0px;
+}
+
+.bouton2 {
+  margin-top: 0px;
+}
+
+}
