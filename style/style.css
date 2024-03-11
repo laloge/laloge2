@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-right: 2em ;
+  padding-left: 2em ;
+  font-family: amiamie, marcel; 
+  font-weight: normal;
+  color: white;
+  font-size: 1em;
+  font-weight: normal;
+  overflow: hidden;
+  background: 
+  linear-gradient(to left,rgba(116, 49, 135, 1), rgba(0, 0, 0, 1)75%);
+}
+
+/*HEADER*/
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titre-header {
+  font-family: 'marcel deforme';
+  font-weight: normal;  
+  font-size: 2em;
+  margin-top: -0.2em;
+  position: absolute; /* Modifier la position */
+  top: 0; /* Positionner le titre en haut */
+  left: 0; /* Positionner le titre à gauche */
+}
+.titre-header span {
+  font-family: 'marcel';
+}
+
+.content{
+  margin: 1em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* FOOTER*/
+
+footer {
+  position: fixed;
+  bottom: 1em;
+  width: 100%;
+  a { 
+    margin: 1em;
+  }
+}
+
+.image-footer{
+  img {
+    width : 1em; 
+    margin-right: -1.4em;
+    margin-bottom: -0.2em;
+    }
+}
+
+
+/* TYPOTHEQUE */
+p {
+  font-size: 1em;
+  font-weight: normal;
+  padding-top: 0.5em;
+  margin: 0px;
+  margin-left: auto;
+}
+
+.titre {
+  font-size: 3.5em;
+  text-align: right;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 40px;
+  margin: 0;
+  text-shadow: 1px 0 20px  ;
+}
+.titre h2 {
+  font-size:inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  margin-top: inherit;
+  margin: inherit;
+  text-shadow: inherit;
+}
+
+.titre-projet {
+  font-size: 5em;
+  font-weight: normal;
+  text-shadow: 1px 0 10px  ;
+  text-align: right;
+}
+
+.sous-titre {
+  font-size: 2.5em;
+  text-align: left;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.texte-vertical {
+  font-size: 10em;
+  font-family: 'marcel deforme';
+  font-weight: normal;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-left;
+  white-space: nowrap; /* Empêche le texte de se diviser sur plusieurs lignes */
+  color: rgba(116, 49, 135, 1);
+  margin-left: -50px;
+  text-shadow: 1px 0 20px  ;
+}
+/*
+
+
+h5 {
+  font-family: marcel;
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0px;
+}
+
+
+*/
+  /* BOUTON */
+  .bouton {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+    
+  .bouton2 {
+    text-align: right; 
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .bouton2 a {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+  .bouton2-portfolio {
+    color: white;
+    text-shadow: 1px 0 10px;
+    font-size: 8em;
+    font-family: abordage;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+  }
+
+@media screen and (max-width: 996px) {
+  body {
+    padding: 1em;
+    font-size: 0.8em;
+  }
+
+  
+  /*HEADER*/
+  .content {
+    padding: 0;
+    text-align: center;
+    margin: 0.5em;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 1em;
+    padding: 0em;
+    text-align: center;
+  }
+
+  /*FOOTER*/
+
+  .content-footer {
+    display: none;
+  }
+
+  .image-footer {
+    img {
+    width: 2em;
+      }
+    margin-left: 0;
+    }
+
+  /*BOUTON*/
+
+  .bouton, .bouton2 {
+    margin-top: auto ;
+    margin-bottom: 30px ;
+    margin-right: 0px;
+  }
+
+  .bouton2-portfolio {
+    font-size: 2.5em;
+  }
+
+  /*TYPOTHEQUE*/
+  p {
+    font-size: 0.7em;
+  }
+
+  .titre {
+    font-size: 1.8em;
+    text-align: right;
+    margin-top: 50%;
+  }
+
+  .sous-titre {
+    font-size: 1.5em;
+  }
+
+  .titre-projet {
+    font-size: 1.8em;
+  }
+}
+
+
+

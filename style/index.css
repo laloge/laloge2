@@ -1,0 +1,71 @@
+
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/LOGOS-accueil/logo15.png"); 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .menu {
+    margin-top: 200px;
+    text-align: right;
+  }
+
+/* HEADER FOOTER ANIM*/
+  .content {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .show {
+    opacity: 1;
+  }
+  .titre-header {
+    display: none;
+  }
+
+  
+  @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+  }
+  
+  .content , .content-footer , .image-footer {
+    animation: fadeIn 1s ease-out 3s forwards;
+  }
+  
+  .content-footer {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    text-align: left;
+    image-rendering: auto;
+  }
+  
+  .image-footer {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .menu{
+    display: none;
+  }
+
+
+  @media screen and (max-width: 996px) {
+    .background-image {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/LOGOS-accueil/logo10.png"); 
+    margin-top: -100px;
+    padding-left: 20px;
+  }
+  }
+  
+  
+  
+  
